@@ -362,7 +362,7 @@ margin-left: 14px !important;
     .logo-img {
         display: block;
         position: absolute;
-        left: 28%;
+        left: 33%;
     }
     
     } 
@@ -389,7 +389,7 @@ margin-left: 14px !important;
     .logo-img {
         display: block;
         position: absolute;
-        left: 29%;
+        left: 29% ;
     }
     
     #icons {
@@ -477,6 +477,14 @@ margin-left: 14px !important;
     #footer-part {
         margin-top: 1150% !important    ;
     }
+}
+
+@media (min-width: 358px) and (max-width : 361px){
+
+    #footer-part {
+        margin-top: 1250% !important;
+    }
+
 }
 
 
