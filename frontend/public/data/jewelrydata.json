@@ -1,0 +1,464 @@
+[{
+  "_id": {
+    "$oid": "67af51c4c64efb5f58fb5942"
+  },
+  "id": "bangle-1",
+  "category": "bangles",
+  "image": "/images/bangles1.avif",
+  "title": "DIAMOND BANGLE | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 205000,
+      "old_price": 300500
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/bangles1.avif",
+    "/images/bangles1.avif",
+    "/images/bangles1.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67af51c4c64efb5f58fb5943"
+  },
+  "id": "bangle-2",
+  "category": "bangles",
+  "image": "/images/bangles2.avif",
+  "title": "SILVER BANGLE | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 5000,
+      "old_price": 10500
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/bangles2.avif",
+    "/images/bangles2.avif",
+    "/images/bangles2.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67af51c4c64efb5f58fb5944"
+  },
+  "id": "bangle-3",
+  "category": "bangles",
+  "image": "/images/bangles3.avif",
+  "title": "GOLD BANGLE | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 100000,
+      "old_price": 102000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/bangles3.avif",
+    "/images/bangles3.avif",
+    "/images/bangles3.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67af51c4c64efb5f58fb5945"
+  },
+  "id": "bangle-4",
+  "category": "bangles",
+  "image": "/images/bangles4.avif",
+  "title": "DIAMOND BANGLE | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 500000,
+      "old_price": 600000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/bangles4.avif",
+    "/images/bangles4.avif",
+    "/images/bangles4.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d797c64efb5f58fb5958"
+  },
+  "category": "chains",
+  "id": "chain-1",
+  "image": "/images/chains1.avif",
+  "title": "DIAMOND CHAIN | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/chains1.avif",
+    "/images/chains1.avif",
+    "/images/chains1.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d797c64efb5f58fb5959"
+  },
+  "category": "chains",
+  "id": "chain-2",
+  "image": "/images/chains2.avif",
+  "title": "SILVER CHAIN | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/chains2.avif",
+    "/images/chains2.avif",
+    "/images/chains2.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d797c64efb5f58fb595a"
+  },
+  "category": "chains",
+  "id": "chain-3",
+  "image": "/images/chains3.avif",
+  "title": "GOLD CHAIN | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/chains3.avif",
+    "/images/chains3.avif",
+    "/images/chains3.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d797c64efb5f58fb595b"
+  },
+  "category": "chains",
+  "id": "chain-4",
+  "image": "/images/chains4.avif",
+  "title": "GOLD CHAIN | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/chains4.avif",
+    "/images/chains4.avif",
+    "/images/chains4.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d94fc64efb5f58fb5960"
+  },
+  "category": "earrings",
+  "id": "earring-1",
+  "image": "/images/earrings1.avif",
+  "title": "DIAMOND EARRINGS",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/earrings1.avif",
+    "/images/earrings1.avif",
+    "/images/earrings1.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d94fc64efb5f58fb5961"
+  },
+  "category": "earrings",
+  "id": "earring-2",
+  "image": "/images/earrings5.avif",
+  "title": "SILVER EARRINGS",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/earrings5.avif",
+    "/images/earrings5.avif",
+    "/images/earrings5.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d94fc64efb5f58fb5962"
+  },
+  "category": "earrings",
+  "id": "earring-3",
+  "image": "/images/earrings3.avif",
+  "title": "GOLD EARRINGS",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/earrings3.avif",
+    "/images/earrings3.avif",
+    "/images/earrings3.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0d94fc64efb5f58fb5963"
+  },
+  "category": "earrings",
+  "id": "earring-4",
+  "image": "/images/earrings4.avif",
+  "title": "SILVER EARRINGS",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/earrings4.avif",
+    "/images/earrings4.avif",
+    "/images/earrings4.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0daa3c64efb5f58fb5964"
+  },
+  "category": "rings",
+  "id": "ring-1",
+  "image": "/images/rings1.avif",
+  "title": "DIAMOND RING | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/rings1.avif",
+    "/images/rings1.avif",
+    "/images/rings1.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0daa3c64efb5f58fb5965"
+  },
+  "category": "rings",
+  "id": "ring-2",
+  "image": "/images/rings2.avif",
+  "title": "SILVER RING | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/rings2.avif",
+    "/images/rings2.avif",
+    "/images/rings2.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0daa3c64efb5f58fb5966"
+  },
+  "category": "rings",
+  "id": "ring-3",
+  "image": "/images/rings3.avif",
+  "title": "GOLD RING | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/rings3.avif",
+    "/images/rings3.avif",
+    "/images/rings3.avif"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67b0daa3c64efb5f58fb5967"
+  },
+  "category": "rings",
+  "id": "ring-4",
+  "image": "/images/rings4.avif",
+  "title": "SILVER RING | SIZE ADJUSTABLE",
+  "price": [
+    {
+      "new_price": 25000,
+      "old_price": 20000
+    }
+  ],
+  "rating": [
+    {
+      "rate": 4.6,
+      "ratings": 6000,
+      "reviews": 5467
+    }
+  ],
+  "description": "Diamonds are a symbol of elegance, love, and luxury, cherished for their brilliance and durability. Formed deep within the Earth under extreme heat and pressure, these exquisite gems have been admired for centuries. Their unmatched sparkle, exceptional hardness, and timeless appeal make them the perfect choice for fine jewelry, from engagement rings to statement accessories. Whether you're looking for a piece that signifies love and commitment or simply a touch of luxury to elevate your style, diamonds offer the perfect blend of sophistication and strength. Explore our exclusive diamond collection and find a piece that shines as bright as you do",
+  "text": "Super",
+  "images": [
+    "/images/rings4.avif",
+    "/images/rings4.avif",
+    "/images/rings4.avif"
+  ]
+}]

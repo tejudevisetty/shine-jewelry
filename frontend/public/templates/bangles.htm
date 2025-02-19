@@ -1,0 +1,298 @@
+<!-- Jewellary list template -->
+
+<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/mainPage.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+
+<script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../lib/axios.js"></script>
+<script src="../lib/handlebar.js"></script>
+<script src="../javascripts/mainPage.js"></script>
+<script src="../javascripts/login.js"></script>
+<script src="../javascripts/registerUserDetails.js"></script>
+<script src="../javascripts/bangle.js"></script>
+<script src="../javascripts/newPage.js"></script>
+<style>
+  .accordion-button{
+    background-color: white !important;
+    color: black !important;
+  }
+   .card-title, .new-price {
+    font-size: larger !important;
+  }
+  
+  .old-price {
+    color: rgb(218, 17, 17) !important;
+  }
+  
+</style>
+
+<script>
+
+  // Use jQuery to update the range value dynamically
+$(document).ready(function () {
+    $('#customRange3').on('input', function () {
+        $('#rangeValue').text(`Price: $${$(this).val()}`);
+    });
+    });
+</script>
+
+<!-- // header part -->
+  <header id="header-part"  class="container-fluid" style="background-color: palevioletred;" >
+            <!-- header part renders here -->
+  </header>
+
+<div class="container mt-5">
+    <div class="custom-display">
+    <div class="row ">
+        <!-- left content -->
+        <div class="col-md-3 mt-5">
+            <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" >
+                    <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <b>PRICE</b>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show show">
+                    <div class="accordion-body">
+                        <label for="customRange3" class="form-label">Select range</label>
+                        <input type="range" class="form-range" min="20000" max="100000" step="2000" id="customRange3">
+                        <div id="rangeValue" class="mt-2" style="font-weight: bold;" ></div>
+                   </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                    <b>CATEGORY</b>
+                    </button>
+
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show ">
+                    <div class="accordion-body">
+                      <ol>
+                        <li><a href="#"  data-category="rings" onclick="navigateTo('rings')"><b>Rings</b></a></li>
+                        <li><a href="#"  data-category="chains" onclick="navigateTo('chains')"><b>Chains</b></a></li>
+                        <li><a href="#"  data-category="earrings" onclick="navigateTo('earrings')" ><b>Earrings</b></a></li>
+                        <li><a href="#"  data-category="bangles" onclick="navigateTo('bangles')" ><b>Bangles</b></a></li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                          <b>JEWELLARY TYPE</b>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Diamonds
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                        <b>AVAILABILITY</b>
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                          In Stock(All)
+                      </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                      <b>SALE</b>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        Offer 10%
+                    </div>
+                  </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
+                    <b>AGE GROUP</b>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                      Above 15
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <!-- right side content -->
+        <div class="col-md-9 mb-5 p-5 mt-4" >
+          <div id="bangles-content">
+
+          </div>
+
+                <!-- Handles bar template to display jewelry -->
+                <script id="jewelry-template" type="text/x-handlebars-template">
+                  <h4 class="text-black fw-bold" >Bangles</h4>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4 mt-2" >
+ 
+                    {{#each this}}
+
+                      <div class="col"  >
+                          <div class="card list_card" >
+                            <img src="{{image}}" class="card-img-top w-100 h-100 handlebar-images"alt="{{alt-text}}" style="cursor: pointer;" id="{{id}}" category="{{category}}" onclick="navigateToViewPage(`${id}`)" >
+                                <div class="card-body">
+                                  {{#each rating}}
+                                    <span class="badge bg-success" >{{rate}} <span class="bi bi-star-fill" > </span></span>
+                                    {{/each}}
+                                    <span><h5 class="card-title">{{title}} </h5></span>
+                                </div>
+                                <div>
+                                  {{#each price}}
+                                  <span class="new-price fw-bold mt-1" >&#8377 {{new_price}}</span>
+                  
+                                  <span class="old-price " style="text-decoration: line-through;" >  &#8377 {{old_price}}</span>
+                                  {{/each }}
+                              </div>
+                          </div>
+                      </div>
+                      {{/each}}
+
+                  </div>
+            
+              </script>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- cards with 3 columns -->
+
+<!-- cards will render here -->
+ <!-- <div class="container" id="three-cards" >
+
+ </div> -->
+
+    <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <footer id="footerr-part " style="background-color: black;" >
+
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+     
+                
+    </footer>
+    
+
+
+
+

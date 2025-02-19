@@ -1,0 +1,201 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/mainPage.css">
+
+<script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../javascripts/mainPage.js"></script>
+
+
+<!-- modified header part -->
+
+<div class="container-fluid header-section">
+     <div class="row">
+        <div class="logo-img  p-2"  >
+            <a href="/" ><img src="/images/my-logo.PNG" width="130" alt="..." ></a>
+        </div>
+            <div class="logo-part p-2" >
+
+                <a href="/" ><img src="/images/my-logo.PNG" width="130" alt="..." ></a>
+            
+            </div>
+
+         <div class="menu-toggle">
+        <button class="mobileMenu-toggle p-0 border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"   >
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512" fill="white" >
+                <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0
+                 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 
+                 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+
+        </button>
+        </div>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title text-black fw-bold fs-4" id="offcanvasExampleLabel"> Jewelry Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="mt-4 p-0 mobileMenuu-items "  >
+                    <li onclick="navigateTo('bangles')" >BANGLES</li>
+                    <li onclick="navigateTo('rings')">RINGS</li>
+                    <li onclick="navigateTo('earrings')">EARRINGS</li>
+                    <li onclick="navigateTo('chains')">CHAINS</li>
+
+                  </ul>
+                  
+                </div>
+              </div>
+
+
+        <div class="col-4">
+            <div class="link-container">
+
+                    <a href="/jewelry/bangles" class="text-white text-decoration-none  " >BANGLES</a>
+                    <a href="/jewelry/rings" class="text-white text-decoration-none" >RINGS</a>
+                    <a href="/jewelry/chains" class="text-white text-decoration-none" >CHAINS</a>
+                    <a href="/jewelry/earrings" class="text-white text-decoration-none" >EARRINGS</a>  
+            </div>  
+        </div>
+        <div class="col-4 ">
+            <div class="header-icons">
+                <div id="icons" style="cursor: pointer; color: antiquewhite;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" data-bs-target="#search-modal" data-bs-toggle="modal" viewBox="0 0 16 16" >
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" id="login" width="30" height="30" fill="currentColor" class="bi bi-person" data-bs-target="#offcanvasRight" data-bs-toggle="offcanvas" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                          </svg>
+                    </div>  
+        </div>
+        </div>
+
+    </div> 
+
+</div>
+
+
+
+<!-- user login form  -->
+<div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel" style="color: black;">Login</h5>
+      <button type="button" class="btn-close"data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body login">
+      <ul>
+       <li>
+           <b>Email Address</b>
+           <input type="email" class="form-control" id="l_email-address" placeholder="Enter your mail" required>
+       </li>
+       <li>
+           <b>Password</b>
+           <input type="password" class="form-control" id="l_password" placeholder="Password" maxlength="8" required>
+       </li>
+       <button class="btn btn-outline-secondary " onclick="readUserDetails()" >LOGIN</button>
+       <li  id="wrong_details"  style="color: red;" >Incorrect email or password</li>
+       <li id="forgotPwd" style="text-align: center;" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+           <b>Forgot Password?</b>
+       </li>
+       <button class="btn btn-outline-dark" id="register_account" data-bs-toggle="modal" data-bs-target="#register_modal" style="font-weight: bold;">CREATE ACCOUNT</button>
+      </ul>
+    </div>  
+  </div>
+
+<!-- forgot password -->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+ <div class="modal-content">
+   <div class="modal-header">
+     <h1 class="modal-title fs-5 text-black" id="staticBackdropLabel">LOGIN WITH OTP</h1>
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+   </div>
+   <div class="modal-body">
+     <div>
+       <input type="number" class="form-control otp-input " placeholder="Enter Phone Number" max="10" required>
+     </div>
+   </div>
+   <div class="modal-footer">
+       <button class="btn btn-outline-secondary" onclick="optFunction()" >Request OTP</button>
+   </div>
+ </div>
+</div>
+</div> 
+
+<!-- user create account -->
+
+<div class="modal fade overflow-auto" tabindex="-1" id="register_modal">
+<div class="modal-dialog">
+<div class="modal-content" >
+<div class="modal-header">
+  <h4 class="modal-title" style="text-align: center;" !IMPORTANT>REGISTER</h4>
+   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<ul>
+   <li>
+       <b>First Name</b>
+       <input type="text" class="form-control" id="r_firstName" placeholder="First Name">
+   </li>
+   <li>
+       <b>Last Name</b>
+       <input type="text" class="form-control" id="r_lastName" placeholder="Last Name">
+   </li>
+   <li>
+       <b>Email Address</b>
+       <input type="email" class="form-control" id="r_email-address" placeholder="Enter your mail" required>
+   </li>
+   <li>
+       <b>Password</b>
+       <input type="password" class="form-control" id="r_password" placeholder="Password" maxlength="8" required>
+   </li>
+   <li>
+       <b>Confirm Password</b>
+       <input type="password" class="form-control" id="r_cnf_password" placeholder="Confirm Password" maxlength="8" required>
+   </li>
+</ul>
+</div>
+<div class="modal-footer">
+   <button class="btn btn-outline-secondary" onclick="registerUser()" >CREATE ACCOUNT</button>
+</div>
+<li id="empty-details" style="color: red; margin-left: 45px;" >Enter details to register</li>
+</div>
+</div>
+</div>
+  
+
+
+<!-- search feature -->
+
+  
+   <div class="modal fade h-75" id="search-modal" >
+  <div id=" staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold text-black" id="staticBackdropLabel" style="font-style: normal;"> SEARCH</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <span><input type="text" placeholder="get your favourite jewelry" class="search-input w-75 m-auto" ><button class="bi bi-search w-25" onclick="searchJewelry()" ></button></span>
+            </div>
+
+            <h3 class="trending fs-6 fw-bolder mt-4" >TRENDING NOW</h3>
+            <span class="bi bi-search p-2"> rings</span>
+            <span class="bi bi-search p-2"> chains</span>
+            <span class="bi bi-search p-2"> bangles</span>
+            <span class="bi bi-search p-2"> earrings</span>
+            <!-- <h6 class="text-secondary">Start typing to get your fav jewelry</h6> -->
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   

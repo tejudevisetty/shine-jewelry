@@ -1,0 +1,303 @@
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/mainPage.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/lib/axios.js"></script>
+<script src="/lib/handlebar.js"></script>
+<script src="/javascripts/mainPage.js"></script>
+<script src="/javascripts/login.js"></script>
+<script src="/javascripts/registerUserDetails.js"></script>
+<script src="/javascripts/newPage.js"></script>
+
+
+<style>
+.old_price {
+    color: rgb(218, 17, 17) !important;
+  }
+   
+</style>
+
+<script>
+
+
+let category;
+
+const jewelryId = window.location.pathname.split("/").pop();
+
+
+    if (jewelryId.startsWith("bangle")) {
+        axios.get('/api/category/get/bangles').then(response => {
+        console.log(response);
+        
+        var getData = '';
+
+        if(jewelryId == "bangle-1"){
+        
+             getData = response.data[0];
+        }
+        else if(jewelryId == "bangle-2"){
+            getData = response.data[1];
+
+        }
+        else if(jewelryId == "bangle-3"){
+            getData = response.data[2];
+
+        }
+        else if(jewelryId == "bangle-4"){
+            getData = response.data[3];
+
+        }
+        renderSinglePageContent(getData);
+            
+        }).catch(error => { 
+        console.log(error);
+    });
+
+    } else if (jewelryId.startsWith("chain")) {
+
+        //chains content
+
+    axios.get('/api/category/get/chains').then(response => {
+
+        console.log("chains img id is:", jewelryId);
+        var getData = '';
+
+        if(jewelryId == "chain-1"){
+            getData = response.data[0];
+        }
+        else if(jewelryId == "chain-2"){
+            getData = response.data[1];
+
+        }
+        else if(jewelryId == "chain-3"){
+            getData = response.data[2];
+
+        }
+        else if(jewelryId == "chain-4"){
+            getData = response.data[3];
+
+        }
+        renderSinglePageContent(getData);
+            
+        }).catch(error => { 
+        console.log(error);
+
+        });
+
+
+    } else if (jewelryId.startsWith("earring")) {
+            //earrings content
+
+    axios.get('/api/category/get/earrings').then(response => {
+
+            
+            console.log("earrings img id is:", jewelryId);
+            var getData = '';
+
+            if(jewelryId == "earring-1"){
+                getData = response.data[0];
+            }
+            else if(jewelryId == "earring-2"){
+                getData = response.data[1];
+
+            }
+            else if(jewelryId == "earring-3"){
+                getData = response.data[2];
+
+            }
+            else if(jewelryId == "earring-4"){
+                getData = response.data[3];
+
+            }
+            renderSinglePageContent(getData);
+                
+            }).catch(error => { 
+            console.log(error);
+            });
+
+    } else if (jewelryId.startsWith("ring")) {
+        axios.get('/api/category/get/rings').then(response => {
+
+console.log("rings img id is:", jewelryId);
+var getData = '';
+
+if(jewelryId == "ring-1"){
+     getData = response.data[0];
+}
+else if(jewelryId == "ring-2"){
+    getData = response.data[1];
+
+}
+else if(jewelryId == "ring-3"){
+    getData = response.data[2];
+
+}
+else if(jewelryId == "ring-4"){
+    getData = response.data[3];
+
+}
+renderSinglePageContent(getData);
+    
+}).catch(error => { 
+console.log(error);
+
+});
+
+    } else {
+        console.error("Invalid category in jewelry ID");
+    }
+
+
+
+
+
+    function renderSinglePageContent(singlePageData){
+
+        const source = document.getElementById('singlePageContentTemplate').innerHTML;
+        const template = Handlebars.compile(source);
+        const singlePageDataa = template(singlePageData);
+        document.getElementById('singlePageContentDisplay').innerHTML = singlePageDataa;
+
+    }
+
+    function cartFunction(){
+        alert("Successfully added to cart");
+    }
+    function buyNow() {
+        alert("Order Confirmed");
+    }
+</script>
+
+<header id="header-part"  class="container-fluid" style="background-color: palevioletred;" >
+    <!-- header part renders here -->
+</header>
+
+<div class="container mt-5 mb-5">
+
+    
+<!-- Data will render here accordingly -->
+<div class="container px-0" style="margin-top: 8%;">
+    <div class="row gx-0" id="singlePageContentDisplay"></div>
+</div>
+
+<!-- Handlebars Data Template -->
+<script id="singlePageContentTemplate" type="text/x-handlebars-template">
+    <div class="container">
+    <div class="row gx-0">
+        
+        <!-- First Column (Images) -->
+        <div class="col-12 col-md-6 px-0">
+            <div class="card mb-3 w-75 m-auto border-0">
+                <img src="{{image}}" class="card-img-top img-fluid" alt="Main Image">
+            </div>
+
+            <div class="d-flex flex-wrap gap-2  justify-content-center">
+                {{#each images}}
+                <div class="card border-0 " style="width: 80px;" >
+                    <img class="img-fluid" src="{{this}}" alt="Thumbnail">
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        <!-- Second Column (Description) -->
+        <div class="col-12 col-md-6  px-0">
+            <div class="p-3 w-75 m-auto">
+                <h4><b class="m-auto" >{{title}}</b></h4>
+                <h6 class="text-success fw-bolder">Special Price</h6>
+                <div>
+                    {{#each price}}
+                    <span class="fs-2 fw-bold mt-1 new_price">&#8377; {{new_price}}</span>
+                    <span class="fs-5  old_price text-decoration-line-through">&#8377; {{old_price}}</span>
+                    {{/each}}
+                </div>
+                <div class="fw-bold">
+                    {{#each rating}}
+                    <span class="badge bg-success"> {{rate}} <span class="bi-star-fill"></span></span>
+                    <span> {{ratings}} ratings and {{reviews}} reviews</span>
+                    {{/each}}
+                </div>
+                <p>{{description}}</p>
+
+                <button class="btn btn-outline-secondary" onclick="cartFunction()" >Add to Cart </button>
+                <button class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightPayment" onclick="buyNow()" >Buy Now</button>
+                <div class="bi bi-eye text-secondary">11 customers are viewing this product</div>
+                <div class="bi bi-cart-check fw-bold text-success">Free shipping</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</script>
+
+</div>
+<footer id="footerr-part " style="background-color: black;" >
+
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+   
+              
+  </footer>

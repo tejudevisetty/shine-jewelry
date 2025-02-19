@@ -1,0 +1,13 @@
+.payment-details .container{
+
+    background-color: rgb(202, 201, 201);
+    border-radius: 4%;
+
+    margin-bottom: 3%;
+}
+
+.promocode {
+    border: 2px dotted grey;
+    border-radius: 7%;
+
+}

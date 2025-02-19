@@ -1,0 +1,38 @@
+[
+    {
+       "id": "p_1",
+      "name": "CeraVe Moisturizing Face Cream",
+      "title": "Hydrating Moisturizing Face Cream",
+      "price": 25.99,
+      "image": "images/img1.jfif",
+      "description": "A deeply hydrating face cream that offers long-lasting moisture and improves skin elasticity.",
+      "discount": "15%",
+      "category": "beautycare" , "rating": 4.8
+      
+        
+    },
+    {
+      "id": "p_1",
+     "name": "CeraVe Moisturizing Face Cream",
+     "title": "Hydrating Moisturizing Face Cream",
+     "price": 25.99,
+     "image": "images/img2.jfif",
+     "description": "A deeply hydrating face cream that offers long-lasting moisture and improves skin elasticity.",
+     "discount": "15%",
+     "category": "beautycare" , "rating": 4.8
+     
+       
+   },
+   {
+    "id": "p_1",
+   "name": "CeraVe Moisturizing Face Cream",
+   "title": "Hydrating Moisturizing Face Cream",
+   "price": 25.99,
+   "image": "images/img3.jfif",
+   "description": "A deeply hydrating face cream that offers long-lasting moisture and improves skin elasticity.",
+   "discount": "15%",
+   "category": "beautycare" , "rating": 4.8
+   
+     
+ }
+]

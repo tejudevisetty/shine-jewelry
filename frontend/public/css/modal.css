@@ -1,0 +1,25 @@
+
+    
+
+
+/* captcha CSS */
+
+.preview {
+    background: linear-gradient(to bottom ,#dfefff, #ffffff);
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    
+    float: left;
+    text-align: center;
+    padding: 5px;
+    height: 35px !important;
+    width: 100%;
+    
+}
+
+.captcha-container {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+  }

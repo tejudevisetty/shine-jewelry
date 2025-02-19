@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="lib/jquery.js"></script>
+        <script src="lib/handlebars.min.js"></script>
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/modal.css" />
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/mainPage.css">
+
+
+
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/axios.js"></script>
+        <script src="lib/handlebar.js"></script>
+        <script src="javascripts/mainPage.js"></script>
+        <script src="javascripts/login.js"></script>
+        <script src="javascripts/registerUserDetails.js"></script>
+
+        <script src="lib/captchaGenerator.js"></script>
+        <!-- <script src="javascripts/captcha.js"></script> -->
+        <script src="javascripts/newPage.js"></script>
+    
+
+    </head>
+    <style>
+      footer {
+    margin-top: 180%;
+      }
+
+    </style>
+    <body>
+
+        <header id="header-part"  class="container-fluid"  >
+            <!-- header part renders here -->
+        </header>        
+
+                    <!-- carousel -->
+      
+
+<div id="home-content">
+  <div class="container-fluid" >
+  <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+      <div class="carousel-inner" data-bs-interval="1000">
+        <div class="carousel-item active">
+          <img src="images/carousel-image-22.jpg" class="d-block w-100" alt="...">
+          </div>
+        <div class="carousel-item ">
+          <img src="images/carousel-img-1-latest.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+          <img src="images/carousel img-33.jpg" class="d-block w-100 "  alt="...">
+          </div>
+          
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button> 
+    </div>
+      </div>
+
+          <!-- card row-1 -->
+              <div class="container cards m-auto">
+                  <h3 style="text-align: center; " class="fw-bold mt-4" >Explore by category</h3>
+                  <div class="categories">
+                  <div class="row" style="margin-top: 3%;">
+                 <div class="col-md">
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/bangles1.avif" class="card-img-top"  style="cursor: pointer;" alt="...">
+                      <button class="btn btn-light" data-category="bangles" id="bangles-card" onclick="navigateTo('bangles')" >Bangles</button>
+                    </div> 
+
+                 </div> 
+                 <div class="col-md">
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/chains1.avif" class="card-img-top" style="cursor: pointer;" alt="...">
+                      <button class="btn btn-light" data-category="chains" id="chains-card" onclick="navigateTo('chains')">Chains</button>
+                    </div>
+
+                 </div>
+                 <div class="col-md">
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/earrings1.avif" class="card-img-top"style="cursor: pointer;" alt="...">
+                      <button class="btn btn-light" data-category="earrings" id="earrings-card" onclick="navigateTo('earrings')">Earrings</button>
+
+                    </div>
+
+                 </div>
+                 <div class="col-md">
+                  <div class="card " style="width: 18rem;">
+                      <img src="images/rings1.avif" class="card-img-top" style="cursor: pointer;"alt="...">
+                      <button class="btn btn-light" data-category="rings" id="rings-card" onclick="navigateTo('rings')">Rings</button>
+
+                    </div>
+                 </div>
+              </div>
+            </div>
+
+          </div> 
+
+
+          <!-- card row-2 -->
+           <div class="container cards categories">
+              <div class="row" style="margin-top: 3%;">
+             <div class="col-sm">
+              <div class="card" style="width: 18rem;">
+                  <img src="images/bangles2.avif" class="card-img-top"  alt="...">
+                  <button class="btn btn-light" onclick="navigateTo('bangles')" >Bangles</button>
+
+                </div> 
+
+             </div> 
+             <div class="col-sm">
+              <div class="card" style="width: 18rem;">
+                  <img src="images/chains2.avif" class="card-img-top" alt="...">
+                  <button class="btn btn-light" onclick="navigateTo('chains')" >Chains</button>
+
+                </div>
+
+             </div>
+             <div class="col-sm">
+              <div class="card" style="width: 18rem;">
+                  <img src="images/earings2.avif" class="card-img-top" alt="...">
+                  <button class="btn btn-light" onclick="navigateTo('earrings')" >Earrings</button>
+
+                </div>
+
+             </div>
+             <div class="col-sm">
+              <div class="card " style="width: 18rem;">
+                  <img src="images/rings2.avif" class="card-img-top" alt="...">
+                  <button class="btn btn-light" onclick="navigateTo('rings')" >Rings</button>
+
+                </div>
+             </div>
+          </div>
+    </div> 
+
+
+          <!-- card row-3 -->
+        <div class="container-fluid">
+          <div class="mt-5"><h3 class="text-center" style="color: rgb(150, 112, 18);" >Why us?</h3> </div>
+          <div class="row mt-5">
+            <div class="col-sm-3  ">
+              <div class="card h-100 promises-card">
+                <div class="bi bi-truck fs-2 p-1" style="color: goldenrod;"></div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5">FAST SHIPPING</h5>
+                  <p class="card-text">Experience the luxury of swift delivery with our express shipping.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 d">
+              <div class="card h-100 promises-card">
+                <div class="bi bi-cart fs-2 p-1" style="color: goldenrod;"></div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5" >EASY FREE RETURNS</h5>
+                  <p class="card-text">Hassle-free returns with no extra cost.Shop confidently with us.</p>
+                </div>
+              </div>
+            </div> 
+            <div class="col-sm-3 ">
+              <div class="card h-100 promises-card">
+                <div class="bi bi-person-check fs-2 p-1" style="color: goldenrod;"></div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5">GENUINE</h5>
+                  <p class="card-text">Authentic handicrafted pieces that shine with purity and elegance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card h-100 promises-card">
+                <div class="bi bi-gem fs-2 p-1" style="color: goldenrod;"></div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-5">CUSTOM DESIGN</h5>
+                  <p class="card-text ">Customise your jewelry with our best services.</p>
+                </div>
+              </div>
+            </div>         
+          </div>
+          </div>
+
+
+          <!-- card row 4 -->
+           <div class="container-fluid">
+          <h3 class="text-center mt-5 fw-semibold " >Recommended</h3>
+          <div class="row row-cols-1 mt-5 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card border-3 h-75">
+                <img src="images/img1.jpg" class="card-img-top  overflow-hidden" alt="...">
+              </div>
+            </div>
+            <div class="col">
+              <div class="card  border-3 h-75">
+                <img src="images/img3.jfif" class="card-img-top overflow-hidden" alt="...">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+          <!-- card row 5 -->
+           <!-- customer reviews -->
+
+          <!-- card row-6 -->
+
+          <div id="contact-section">
+            <div class="text-center fs-3 fw-bold">Contact us</div>
+
+            <div class="row ">
+              <div class="col-6  mt-5">
+
+                <div class="row-cols-2 contact-left">
+
+                  <p class="text-center m-auto h-auto fs-3" >Dont hesitate to contact us whenever!</p>
+                  <p class="text-secondary text-center m-auto mt-2">We appreciate your support</p>
+
+
+                </div>
+              </div>
+              <div class="col-6  mt-5">
+                <div class="input-contact" >
+                 
+                  <input type="text" id="contact-name" placeholder="Your name"> 
+                  <input type="email" id="contact-email" placeholder="Your mail" >
+                  <textarea name="text" id="contact-message" rows="4" cols="50" placeholder="Message" ></textarea>
+                  <button class="btn btn-light" onclick="sendMessage()" >Send Message</button>
+
+               </div>
+              </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <footer id="footer-part" >
+
+            
+          </footer>
+        
+    </body>
+   
+</html>

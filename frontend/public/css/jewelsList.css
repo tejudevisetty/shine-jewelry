@@ -1,0 +1,15 @@
+
+.custom-display {
+    position: relative;
+    margin-top: 5%;
+
+}
+
+.list_card {
+
+    border-style: none;
+
+    img {
+        border-radius: 4%;
+    }
+}
