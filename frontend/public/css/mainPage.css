@@ -365,7 +365,7 @@ margin-left: 14px !important;
         left: 28%;
     }
     
-    }
+    } 
 
     @media screen and (max-width: 391px){
        
@@ -426,7 +426,7 @@ margin-left: 14px !important;
     
     @media screen and (max-width: 420px){
     #footer-part {
-        margin-top: 1150% !important;
+        margin-top: 1200% !important;
     }
     }
     @media screen and (max-width: 541px){
@@ -449,7 +449,7 @@ margin-left: 14px !important;
 
     @media screen and (max-width: 416px){
         #footer-part {
-            margin-top: 1100% !important;
+            margin-top: 1200% !important;
         }
         }
 
@@ -458,7 +458,7 @@ margin-left: 14px !important;
 
 @media screen and (max-width: 435px){
     #footer-part {
-        margin-top: 1100% !important    ;
+        margin-top: 1100% !important   ;
     }
 }
 
